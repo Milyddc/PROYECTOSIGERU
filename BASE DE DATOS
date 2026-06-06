@@ -1,0 +1,26 @@
+//modelo fisico, script DDL, dump de estructura
+
+SQL CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(255),
+    rol VARCHAR(50)
+);
+
+TABLA CONTENEDORES
+
+CREATE TABLE contenedores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ubicacion VARCHAR(255),
+    estado VARCHAR(50),
+    tipo_residuo VARCHAR(50)
+);
+
+TABLA CAMIONES 
+
+CREATE TABLE camiones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    matricula VARCHAR(20),
+    estado VARCHAR(50)
+);
